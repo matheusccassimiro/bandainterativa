@@ -40,7 +40,7 @@ function play() {
         bss.play()
         drm.play()
         playbtn.classList.add('play')
-        playbtn.src = "/src/img/pause.png"
+        playbtn.src = "./src/img/pause.png"
 
         /*        audiotpt.classList.add('play')
                 audiotbn.classList.add('play')
