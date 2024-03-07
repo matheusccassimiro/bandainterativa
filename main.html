@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Interativa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+</head>
+
+<body>
+    <main>
+        <h1>Banda Interativa</h1>
+        <p class="texto">Escolha os instrumentos que você deseja ouvir:</p>
+
+        <div class="container">
+            <div class="inst"><img onclick="mutar('tpt')" class="img" id="tpt" src="/src/img/trumpet.png" alt=""></div>
+            <div class="inst"><img onclick="mutar('tbn')" class="img" id="tbn" src="/src/img/trombone.png" alt=""></div>
+            <div class="inst"><img onclick="mutar('sax')" class="img" id="sax" src="/src/img/sax.png" alt=""></div>
+            <div class="inst"><img onclick="mutar('pno')" class="img" id="pno" src="/src/img/piano.png" alt=""></div>
+            <div class="inst"><img onclick="mutar('bss')" class="img" id="bss" src="/src/img/bass.png" alt=""></div>
+            <div class="inst"><img onclick="mutar('drm')" class="img" id="drm" src="/src/img/drums.png" alt=""></div>
+        </div>
+
+
+        <img class="play-btn" id="play-btn" onclick="play()" src="/src/img/play.png">
+
+
+
+        <audio class="audiotpt" id="audiotpt" src="/src/audios/trompete.mp3"></audio>
+        <audio class="audiotbn" id="audiotbn" src="/src/audios/trombone.mp3"></audio>
+        <audio class="audiosax" id="audiosax" src="/src/audios/sax.mp3"></audio>
+        <audio class="audiopno" id="audiopno" src="/src/audios/piano.mp3"></audio>
+        <audio class="audiobss" id="audiobss" src="/src/audios/baixo.mp3"></audio>
+        <audio class="audiodrm" id="audiodrm" src="/src/audios/bateria.mp3"></audio>
+
+
+        <script src="./src/script/script.js"></script>
+    </main>
+</body>
+
+
+</html>
